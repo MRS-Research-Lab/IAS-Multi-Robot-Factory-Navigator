@@ -84,7 +84,13 @@ roslaunch turtlebot_architecture Turtlecontrol.launch
 
 Moreover, the launch file includes the `P2P.py` node which is responsible to control the robot's motion using **Point-to-Point control**. It subscribes the goal points sent by the MQTT signals and the actual pose of the robot from the `odom` topic and publishes the linear and angular controlled velocities for the robot to move. 
 
-Finally, the launch file includes the `APF.py` node which is responsible for obstacle avoidance method using the **Artificial Potential Field (APF)** approach. The static obstacles locations are obtained by gmapping in Gazebo prebuilt environment, while the dynamic obstacle locations are acquired by the onboard LIDAR sensor. The APF updates the location and orientation of the robot based on computed attractive (towards the goal) and repulsive (away from obstacle) forces. For further illustration of the algorithm, kindly visit the following link: [`APF Algorithm`](https://drive.google.com/open?id=1TWZQeathktpwSYaO6owYp2_ohNy_oGNd)
+Finally, the launch file includes the `APF.py` node which is responsible for obstacle avoidance method using the **Artificial Potential Field (APF)** approach. The static obstacles locations are obtained by gmapping in Gazebo prebuilt environment, while the dynamic obstacle locations are acquired by the onboard LIDAR sensor. The APF updates the location and orientation of the robot based on computed attractive (towards the goal) and repulsive (away from obstacle) forces. For further illustration of the algorithm, kindly visit the following link: [`APF Algorithm`](https://drive.google.com/open?id=1TWZQeathktpwSYaO6owYp2_ohNy_oGNd).
+
+# Open Manipulator Object Handling
+
+## 1. Setup
+
+## 2. Manipulator Control Architecture
 
 # Acknowledgments
 Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS director and member, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
