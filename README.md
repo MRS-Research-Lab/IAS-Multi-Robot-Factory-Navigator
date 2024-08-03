@@ -43,7 +43,11 @@ Running it without manipulator
 ```bash
 roslaunch turtlebot3_gazebo turtlebot3_ias.launch
 ```
+# Turtlebot Navigation
+For turtlebot control and navigation, specific picking and depot locations are set for each robot. The control algorithm applied is the Point-to-Point control method to handle the robot's linear and angular velocities to reach the desired way point with accurate position and orientation. To avoid static and dynamic obstacles in the region, Artificial Potential Field (APF) method is adopted. Further details on the setup and launching the control and navigation architecture are discussed in the upcoming points.
 
+## 1. PC and SBC Setup 
+In order to build the turtlebot navigation framework, PC setup and Raspberry Pi (SBC) setup should be performed first through ['PC setup'](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/). It is worth mentionning that the project's architecture is built using ROS Noetic version, Ubuntu 20.04. 
 
 # Acknowledgments
 Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS director and member, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
