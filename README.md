@@ -8,6 +8,42 @@ The project folders are divided into three groups:
 - Turtlebot Navigation
 - Open Manipulator Object Handling
 
+# IAS Lab Simulation Environment
+This simulation environment is designed on Gazebo simulator using a mobile phone 3D laser scanner application to scan the IAS lab sturcture and save the created file as world file to be launched on Gazebo simulator. In addition, a turtlebot3 robot equipped with open manipulator is spawned in the created environment for navigation purposes.  
+
+## 1. Download Needed File
+Download the [`ias_environment.zip`](ias_environment.zip) File
+
+Open a new terminal using `CTRL` + `ALT` + `T` or from the applications pane and run this command
+```bash
+sudo apt install unzip
+cd ~/Downloads
+unzip ias.zip -d ~/Downloads
+```
+
+## 2. Move the Files
+Run the following Commands
+```bash
+mkdir -p ~/.gazebo/models/IAS/meshes
+cd ~/Downloads
+mv model.config model.sdf ~/.gazebo/models/IAS
+mv model.dae Image_0.jpg ~/.gazebo/models/IAS/meshes
+mv turtlebot3_ias.launch turtlebot3_ias_gripper.launch ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch
+mv IAS.world ias_empty.world ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/worlds
+mv turtlebot3_manipulation_gazebo_ias.launch ~/catkin_ws/src/turtlebot3_manipulation_simulations/turtlebot3_manipulation_gazebo/launch
+```
+
+## 3. Run the Simulation
+Running it with manipulator
+```bash
+roslaunch turtlebot3_manipulation_gazebo turtlebot3_manipulation_gazebo_ias.launch
+```
+
+Running it without manipulator
+```bash
+roslaunch turtlebot3_gazebo turtlebot3_ias.launch
+```
+
 
 # Acknowledgments
 Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS director and member, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
