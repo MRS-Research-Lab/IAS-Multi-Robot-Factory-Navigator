@@ -106,7 +106,7 @@ rosrun manipulator_control Manipulator_Goal_Points_Turtlebot1
 `Manipulator_Goal_Points_Turtlebot1` or `Manipulator_Goal_Points_Turtlebot2` are python nodes that are used to send the required joint angles and gripper's motion for the manipulator. The nodes subscribe from `/Camera_msg` and `MQTT_msg` to subscribe the color of the object and the current status of the manipulator. The MQTT script is used to send the manipulator the commands for grasping and releasing the object. The nodes publishes to  `/Manipulator_JointSpace_Goal` to pulish the required joint angles and `/Manipulator_Gripper_Open_Close' to publish the required boolean expression for closing and opening the gripper. 
 
 # Extra Material 
-Several videos testing the architecture are recorded and present through [`Media`](Media.zip) File. In addition, a presentation illustrating the whole process is present though ['Final Presentation'](final_presentation.pptx).
+Several videos testing the architecture are recorded and present through [`Media.zip`](Media.zip) File. In addition, a presentation illustrating the whole process is present though ['Final_Presentation.pptx'](final_presentation.pptx).
 
 # Acknowledgments
 Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS director and member, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
