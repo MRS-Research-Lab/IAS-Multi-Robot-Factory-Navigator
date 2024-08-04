@@ -111,6 +111,6 @@ rosrun manipulator_control Manipulator_Goal_Points_Turtlebot1
 Several videos testing the architecture are recorded and present through [`Media`](https://drive.google.com/file/d/1wLJwq8hGhBpHKh4v2OiO7iuZHSlS__et/view?usp=sharing). In addition, a presentation illustrating the whole process is present though ['Final_Presentation.ppsx'](final_presentation.ppsx).
 
 # Acknowledgments
-Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS director and member, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
+Gratitude is extended to Prof. Dr. Ing Andrey Morozov and Eng. Philipp Grimmeisen, M.Sc.; IAS team, and Assoc. Prof. Dr. Omar M. Shehata; MRS director for providing this incredible opportunity. Appreciation is also conveyed to the MRS team for their dedication and hard work in meeting the project requirements. Their efforts were crucial to the project's success.
 
 ![IAS-MRS_Team](https://github.com/user-attachments/assets/483af2e4-7ee1-4e0d-8afc-b3a7519784ad)
